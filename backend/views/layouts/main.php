@@ -25,7 +25,7 @@ AppAsset::register($this);
     <div class="wrap">
         <?php
             NavBar::begin([
-                'brandLabel' => 'test',
+                'brandLabel' => '后台管理',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
@@ -39,6 +39,7 @@ AppAsset::register($this);
             } else {
                 $menuItems[] = ['label' => '会员', 'url' => ['/user']];
                 $menuItems[] = ['label' => '会员组', 'url' => ['/role']];
+                $menuItems[] = ['label' => '频道', 'url' => ['/topic']];
                 $menuItems[] = [
                     'label' => '注销 (' . Yii::$app->user->identity->username . ')',
                     'url' => ['/site/logout'],
